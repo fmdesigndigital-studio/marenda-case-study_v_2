@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Study | Marenda Steak House x FM DESIGN Digital Studio</title>
+  <meta name="description" content="Studija slučaja: kako je FM DESIGN Digital Studio kreirao SOP koji je pomogao Marenda Steak House restoranu da pokrene prvi Google oglas i dobije proces koji može da delegira.">
+  <meta property="og:title" content="Case Study: Marenda Steak House x FM DESIGN Digital Studio">
+  <meta property="og:description" content="Od WhatsApp poruke i nejasnog Google Ads procesa do aktivnog oglasa, prvih rezultata i SOP-a kao digitalne imovine restorana.">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fdfdfd;
+      --paper: #fdfdfd;
+      --ink: #1c1d1f;
+      --taupe: #918b76;
+      --red: #9a031e;
+      --gold: #bf9b58;
+      --muted: #686b70;
+      --line: #dedbd2;
+      --soft: #f7f5f0;
+      --taupe-soft: #eeeae0;
+      --gold-soft: #f5ecd8;
+      --red-soft: #f6e8eb;
+      --shadow: 0 18px 50px rgba(28, 29, 31, .07);
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .top {
+      border-bottom: 1px solid var(--line);
+      background: rgba(253, 253, 253, .94);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+
+    .top-inner {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: var(--ink);
+      color: var(--bg);
+      font-size: 13px;
+      line-height: 1;
+      border: 1px solid var(--gold);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .hero {
+      padding: 62px 0 44px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
+      gap: 34px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--taupe);
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      text-decoration: underline;
+      text-decoration-color: var(--gold);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 7px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 790px;
+      font-size: clamp(34px, 6.8vw, 70px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 780px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2.2vw, 21px);
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 28px;
+      max-width: 700px;
+    }
+
+    .meta-item {
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .meta-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+
+    .meta-item strong { font-size: 15px; }
+
+    .snapshot {
+      background: var(--ink);
+      color: var(--bg);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(191, 155, 88, .36);
+      display: grid;
+      gap: 16px;
+    }
+
+    .snapshot h2 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .snapshot p {
+      margin: 0;
+      color: rgba(253, 253, 253, .74);
+    }
+
+    .mini-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .mini-metric {
+      padding: 16px 10px;
+      border-radius: 8px;
+      background: rgba(253, 253, 253, .08);
+      text-align: center;
+    }
+
+    .mini-metric strong {
+      display: block;
+      color: var(--gold);
+      font-size: 26px;
+      line-height: 1.05;
+      margin-bottom: 5px;
+    }
+
+    .mini-metric span {
+      color: rgba(253, 253, 253, .68);
+      font-size: 12px;
+    }
+
+    .search-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .search-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--bg);
+      font-size: 14px;
+    }
+
+    .pill {
+      border: 1px solid rgba(253, 253, 253, .18);
+      border-radius: 999px;
+      padding: 6px 10px;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .search-row strong { color: var(--gold); }
+
+    section {
+      padding: 62px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(190px, .35fr) minmax(0, .65fr);
+      gap: 28px;
+      align-items: start;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(26px, 4vw, 42px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .three {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      line-height: 1.22;
+      letter-spacing: 0;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    .card p { margin: 0; }
+
+    .card ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      font-size: 13px;
+      font-weight: 700;
+      border: 1px solid var(--line);
+      background: var(--bg);
+    }
+
+    .tag.problem {
+      color: var(--red);
+      background: var(--red-soft);
+      border-color: rgba(154, 3, 30, .18);
+    }
+
+    .tag.solution {
+      color: var(--taupe);
+      background: var(--taupe-soft);
+      border-color: rgba(145, 139, 118, .28);
+    }
+
+    .tag.result {
+      color: var(--ink);
+      background: var(--gold-soft);
+      border-color: rgba(191, 155, 88, .32);
+    }
+
+    .journey {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .step {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      min-height: 190px;
+      display: grid;
+      align-content: start;
+      gap: 12px;
+    }
+
+    .num {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: var(--gold);
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .step h3 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .metric {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      min-height: 145px;
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--gold);
+      font-size: clamp(31px, 5vw, 48px);
+      line-height: 1;
+      letter-spacing: 0;
+      margin-bottom: 10px;
+    }
+
+    .metric span { color: var(--muted); }
+
+    .asset {
+      display: grid;
+      grid-template-columns: minmax(0, .8fr) minmax(260px, .2fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .asset-main {
+      background: var(--ink);
+      color: var(--bg);
+      border-radius: 8px;
+      padding: clamp(24px, 4vw, 42px);
+      display: grid;
+      align-content: center;
+      border: 1px solid rgba(191, 155, 88, .36);
+    }
+
+    .asset-main p {
+      max-width: 800px;
+      color: rgba(253, 253, 253, .74);
+      font-size: 19px;
+      margin: 18px 0 0;
+    }
+
+    .asset-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .asset-list div {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--gold);
+      border-radius: 8px;
+      padding: 16px;
+      color: var(--muted);
+    }
+
+    blockquote {
+      margin: 0;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+      padding: clamp(22px, 4vw, 34px);
+      box-shadow: var(--shadow);
+      font-size: clamp(22px, 3vw, 34px);
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    blockquote cite {
+      display: block;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 15px;
+      font-style: normal;
+    }
+
+    .quote-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(260px, .35fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .quote-side {
+      display: grid;
+      gap: 12px;
+    }
+
+    .quote-side p {
+      margin: 0;
+      background: var(--taupe-soft);
+      color: var(--ink);
+      border: 1px solid rgba(145, 139, 118, .25);
+      border-radius: 8px;
+      padding: 16px;
+      font-weight: 700;
+    }
+
+    .footer {
+      padding: 34px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: grid;
+      justify-items: center;
+      gap: 8px;
+      border-top: 1px solid var(--taupe);
+      padding-top: 24px;
+      text-align: center;
+    }
+
+    .footer-inner strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .section-head,
+      .asset,
+      .quote-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .three,
+      .journey,
+      .metrics {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        width: min(100% - 22px, var(--max));
+      }
+
+      .top {
+        position: static;
+      }
+
+      .top-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      nav {
+        justify-content: flex-start;
+        font-size: 18px;
+        gap: 8px 18px;
+      }
+
+      .hero {
+        padding-top: 36px;
+      }
+
+      section {
+        padding: 42px 0;
+      }
+
+      .meta,
+      .three,
+      .two,
+      .journey,
+      .metrics,
+      .mini-metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .metric,
+      .step {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <div class="brand">
+        <div class="mark">FM</div>
+        <span>FM DESIGN Digital Studio</span>
+      </div>
+      <nav aria-label="Navigacija stranice">
+        <a href="#problem">Problem</a>
+        <a href="#resenje">Rešenje</a>
+        <a href="#rezultat">Rezultat</a>
+        <a href="#benefit">Benefit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Case Study / SOP sistem za oglašavanje</p>
+          <h1>Kako je SOP pomogao Marenda Steak House restoranu da pokrene prvi Google oglas</h1>
+          <p class="lead">Milan Sladoja, suvlasnik restorana Marenda Steak House u Kotoru, javio se preko WhatsApp-a jer želi da oglasi restoran na Google-u, ali mu proces nije bio jasan. FM DESIGN Digital Studio je od tog problema napravio jednostavan vodič, interaktivnu checklistu i digitalnu imovinu koju restoran može koristiti i ubuduće.</p>
+          <div class="meta" aria-label="Osnovne informacije">
+            <div class="meta-item">
+              <span>Brend</span>
+              <strong>FM DESIGN Digital Studio</strong>
+            </div>
+            <div class="meta-item">
+              <span>Klijent</span>
+              <strong>Marenda Steak House, Kotor</strong>
+            </div>
+            <div class="meta-item">
+              <span>Kontakt osoba</span>
+              <strong>Milan Sladoja, suvlasnik restorana</strong>
+            </div>
+            <div class="meta-item">
+              <span>Format rešenja</span>
+              <strong>SOP + interaktivna to-do lista + WhatsApp podrška</strong>
+            </div>
+          </div>
+        </div>
+
+        <aside class="snapshot" aria-label="Sažetak rezultata">
+          <h2>Rani rezultat kampanje</h2>
+          <p>Oglas je prvo ušao u status “Na čekanju”, zatim je počeo da prikazuje prve merljive signale.</p>
+          <div class="mini-metrics">
+            <div class="mini-metric">
+              <strong>6,06 EUR</strong>
+              <span>potrošeno</span>
+            </div>
+            <div class="mini-metric">
+              <strong>911</strong>
+              <span>prikaza</span>
+            </div>
+            <div class="mini-metric">
+              <strong>21</strong>
+              <span>klik</span>
+            </div>
+          </div>
+          <div class="search-list">
+            <div class="search-row"><span class="pill">incontro kotor</span><strong>1,12 EUR</strong></div>
+            <div class="search-row"><span class="pill">manger a proximité</span><strong>0,66 EUR</strong></div>
+            <div class="search-row"><span class="pill">bonazza restaurant kotor</span><strong>0,45 EUR</strong></div>
+            <div class="search-row"><span class="pill">konoba portun</span><strong>0,40 EUR</strong></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="problem">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Problem</h2>
+          <p>Milan je želeo vidljivost restorana na Google-u, ali nije znao kako da sigurno prođe kroz Business profil, Google Ads, budžet, objavu i odobrenje oglasa. Kao suvlasnik, nije mu trebalo samo trenutno rešenje, nego postupak koji može da ponovi ili delegira zaposlenima.</p>
+        </div>
+        <div class="three">
+          <article class="card">
+            <span class="tag problem">Početna poruka</span>
+            <h3>“Želim da uplatim Google business oglas, ali mi ne ide.”</h3>
+            <p>Poruka je pokazala jasnu nameru, ali bez konteksta gde tačno proces zapinje.</p>
+          </article>
+          <article class="card">
+            <span class="tag problem">Rizik</span>
+            <h3>Jedan pogrešan klik može napraviti lošu kampanju</h3>
+            <p>Preširoka lokacija, pogrešan cilj, nejasan budžet ili nerazumevanje statusa “Na čekanju” mogli su brzo da stvore frustraciju.</p>
+          </article>
+          <article class="card">
+            <span class="tag problem">Organizacioni izazov</span>
+            <h3>Operativa ne sme stalno da zavisi od suvlasnika</h3>
+            <p>Ako Milan svaki put mora sam da klika ili objašnjava proces, oglašavanje ostaje improvizacija umesto sistema.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resenje">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Rešenje</h2>
+          <p>FM DESIGN Digital Studio je kreirao SOP pisan jezikom početnika, zatim ga pretvorio u interaktivnu checklistu. SOP vodi kroz ceo postupak: od provere profila i kartice do objave oglasa, prvih metrika i daljeg praćenja.</p>
+        </div>
+        <div class="journey" aria-label="Put od problema do rešenja">
+          <div class="step">
+            <div class="num">1</div>
+            <h3>Razjasniti šta korisnik zapravo pokušava</h3>
+            <p>Umesto da se odmah ulazi u komplikovan Ads žargon, prvo je bilo važno prevesti problem na jednostavne korake.</p>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h3>Napisati SOP za početnika</h3>
+            <p>Procedura je objasnila Google nalog, Business profil, Promote dugme, cilj kampanje, lokaciju, budžet i objavu.</p>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Pretvoriti proceduru u checklistu</h3>
+            <p>Milan je mogao da ide redom, čekira završeno i kasnije istu listu koristi kao interni vodič.</p>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <h3>Objasniti analitiku posle objave</h3>
+            <p>Kroz WhatsApp podršku objašnjeni su prikazi, klikovi, lokalne radnje, termini za pretragu i cena po kliku.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Šta je SOP pokrivao</h2>
+          <p>Uputstvo nije bilo samo “klikni ovde”. Pokrilo je ceo mentalni model koji početniku treba da ne bi lutao kroz Google Ads.</p>
+        </div>
+        <div class="two">
+          <article class="card">
+            <span class="tag solution">Operativni koraci</span>
+            <ul>
+              <li>uloguj se na pravi Google nalog,</li>
+              <li>proveri Google Business profil,</li>
+              <li>klikni Promote / Promoviši,</li>
+              <li>izaberi cilj koji ima smisla za restoran,</li>
+              <li>postavi Kotor i okolinu kao lokaciju,</li>
+              <li>kreni sa malim budžetom od 3 do 5 EUR dnevno,</li>
+              <li>objavi oglas i sačekaj odobrenje.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="tag solution">Objašnjenja posle objave</span>
+            <ul>
+              <li>šta znači status “Na čekanju”,</li>
+              <li>zašto prikaz nije isto što i poseta,</li>
+              <li>šta znači klik i kako se plaća,</li>
+              <li>šta znače termini za pretragu,</li>
+              <li>zašto Google nekad prikazuje i šire pretrage,</li>
+              <li>kada čekati, a kada menjati strategiju.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="rezultat">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Rezultat</h2>
+          <p>Milan je uspešno pokrenuo Google oglas. Prvi podaci su pokazali da se oglas prikazuje i da ljudi reaguju klikom. U ovoj fazi nije tvrđeno da oglas donosi prihod, već da je proces uspešno aktiviran i da postoje prvi signali za optimizaciju.</p>
+        </div>
+        <div class="metrics" aria-label="Rezultati kampanje">
+          <div class="metric">
+            <strong>6,06 EUR</strong>
+            <span>rane potrošnje kampanje</span>
+          </div>
+          <div class="metric">
+            <strong>911</strong>
+            <span>prikaza oglasa</span>
+          </div>
+          <div class="metric">
+            <strong>21</strong>
+            <span>klik na oglas</span>
+          </div>
+          <div class="metric">
+            <strong>0</strong>
+            <span>lokalnih radnji u ranoj fazi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefit">
+      <div class="wrap asset">
+        <div class="asset-main">
+          <h2>Najjači benefit: SOP kao digitalna imovina restorana</h2>
+          <p>Najveća vrednost nije samo to što je Milan pustio jedan Google oglas. Vrednost je u tome što je operativno znanje pretvoreno u dokumentovan, ponovljiv i delegabilan proces. Marenda Steak House sada ima uputstvo koje može ostati u sistemu restorana za buduće kampanje.</p>
+        </div>
+        <div class="asset-list" aria-label="Benefiti SOP-a">
+          <div>Postupak više nije improvizacija.</div>
+          <div>Znanje ne ostaje samo u jednoj WhatsApp prepisci.</div>
+          <div>Zaposleni mogu preuzeti operativni deo.</div>
+          <div>Milan štedi vreme i bavi se strategijom.</div>
+          <div>Restoran dobija sistem za buduće kampanje.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Šta je korisnik naučio</h2>
+          <p>SOP je pomogao Milanu da razume osnovnu logiku Google oglašavanja, ne samo da mehanički klikne na objavu.</p>
+        </div>
+        <div class="three">
+          <article class="card">
+            <span class="tag result">Razumevanje</span>
+            <h3>Prikaz, klik i potrošnja nisu isto</h3>
+            <p>Prikaz znači da se oglas pojavio, klik znači da je neko reagovao, a potrošnja se uglavnom vezuje za klikove.</p>
+          </article>
+          <article class="card">
+            <span class="tag result">Strpljenje</span>
+            <h3>Prvi dani nisu konačan sud</h3>
+            <p>Kampanji treba dati nekoliko dana da prikupi podatke pre donošenja ozbiljnih zaključaka.</p>
+          </article>
+          <article class="card">
+            <span class="tag result">Delegiranje</span>
+            <h3>Suvlasnik ne mora da radi svaki operativni korak</h3>
+            <p>Zaposleni ili saradnik mogu pratiti SOP, dok Milan odlučuje o budžetu, ponudi i strategiji.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap quote-grid">
+        <blockquote>
+          “Ovo tvoje uputstvo je super, baš je onako prosto, jednostavno. Za čovjeka koji je informatički pismen 2% kao ja je super.”
+          <cite>Milan Sladoja, suvlasnik restorana Marenda Steak House</cite>
+        </blockquote>
+        <div class="quote-side">
+          <p>“Generalno je super objašnjeno, prosto, jednostavno i baš dobro.”</p>
+          <p>“Sad su mi malo slegle stvari pa mi je malo jasnije sve to.”</p>
+          <p>“Ovo tvoje uputstvo je baš korisno.”</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Sledeća strategija</h2>
+          <p>Nakon prvih podataka, sledeći korak nije panična izmena kampanje. Potrebno je pratiti rezultate, videti koje pretrage troše budžet i optimizovati kampanju na osnovu stvarnih signala.</p>
+        </div>
+        <div class="three">
+          <article class="card">
+            <span class="tag solution">Praćenje</span>
+            <h3>Pustiti kampanju još nekoliko dana</h3>
+            <p>Rani podaci pokazuju da oglas radi, ali treba više vremena za precizniji zaključak.</p>
+          </article>
+          <article class="card">
+            <span class="tag solution">Optimizacija</span>
+            <h3>Suziti ako Google troši na preširoke pretrage</h3>
+            <p>Ako ima klikova, ali nema poziva ili smernica, treba doraditi tekst, lokaciju i fokus kampanje.</p>
+          </article>
+          <article class="card">
+            <span class="tag solution">Strategija</span>
+            <h3>Testirati udarne periode restorana</h3>
+            <p>Ako se potvrdi da je večera najjači period, oglas se može usmeriti na večernji termin i relevantne obroke.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Zaključak</h2>
+          <p>Ovaj primer pokazuje vrednost SOP-a koji nije samo interni dokument, već praktičan alat za podršku korisniku i sistematizaciju poslovanja.</p>
+        </div>
+        <div class="two">
+          <article class="card">
+            <span class="tag result">Za klijenta</span>
+            <h3>Jasnoća, samostalnost i manje operativnog pritiska</h3>
+            <p>Milan je dobio jasan put kroz Google Ads, razumevanje prvih metrika i proceduru koju može sačuvati u sistemu restorana.</p>
+          </article>
+          <article class="card">
+            <span class="tag result">Za FM DESIGN Digital Studio</span>
+            <h3>Dokaz poslovne vrednosti personalizovanih SOP procedura</h3>
+            <p>Brend ne isporučuje samo instrukcije, već pravi sistem koji korisniku štedi vreme, smanjuje zbunjenost i omogućava delegiranje.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <strong>© 2026 FM DESIGN Digital Studio &amp; Fildeak Mihalj Biz</strong>
+      <span>Korišćenjem digitalnih izdanja čuvamo prirodu.</span>
+      <span>Sva prava zadržana.</span>
+    </div>
+  </footer>
+</body>
+</html>
